@@ -41,6 +41,7 @@ function setHook($set = 1)
 
    printAnswer(
       getTelegramApi(
+         // setWebhook это походу метод и взят из документации
          'setWebhook',
          [
             'url' => $set ? $url : ''
@@ -50,4 +51,4 @@ function setHook($set = 1)
    exit();
 }
 // установка хука
-setHook();
+setHook(1);
